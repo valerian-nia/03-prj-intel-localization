@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,7 +14,7 @@
   <header class="hero">
     <div class="hero-content">
       <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
-      <img class="intel-logo" src="img/intel-header-logo.svg" alt="Intel Logo" />
+      <img class="intel-logo" src="img/intel-header-logo.svg" alt="Intel logo" />
       <!-- Main Heading -->
       <h1 class="hero-title">
         Sustainability Through the Ages
@@ -34,7 +36,7 @@
     <!-- Individual Milestone Cards -->
     <!-- Card 1: 1968 -->
     <article class="milestone-card">
-      <img class="milestone-image" src="img/1968.jpg" alt="Intel founded in 1968" />
+      <img class="milestone-image" src="img/1968.jpg" alt="Image representing Intel's founding in 1968" />
       <h2 class="milestone-year">1968</h2>
       <h3 class="milestone-title">Intel Founded</h3>
       <p class="milestone-description">
@@ -46,7 +48,7 @@
 
     <!-- Card 2: 1971 -->
     <article class="milestone-card">
-      <img class="milestone-image" src="img/1971.jpg" alt="Intel's first microprocessor in 1971" />
+      <img class="milestone-image" src="img/1971.jpg" alt="Image representing Intel's first commercial microprocessor, introduced in 1971" />
       <h2 class="milestone-year">1971</h2>
       <h3 class="milestone-title">First Microprocessor</h3>
       <p class="milestone-description">
@@ -58,7 +60,7 @@
 
     <!-- Card 3: 1978 -->
     <article class="milestone-card">
-      <img class="milestone-image" src="img/1978.jpg" alt="Intel 8086 processor launched in 1978" />
+      <img class="milestone-image" src="img/1978.jpg" alt="Image representing Intel's 8086 processor launch in 1978" />
       <h2 class="milestone-year">1978</h2>
       <h3 class="milestone-title">8086 Processor</h3>
       <p class="milestone-description">
@@ -69,7 +71,7 @@
 
     <!-- Card 4: 1985 -->
     <article class="milestone-card">
-      <img class="milestone-image" src="img/1985.jpg" alt="Intel 386 processor launched in 1985" />
+      <img class="milestone-image" src="img/1985.jpg" alt="Image representing Intel's 386 processor launch in 1985" />
       <h2 class="milestone-year">1985</h2>
       <h3 class="milestone-title">386 Processor</h3>
       <p class="milestone-description">
@@ -81,7 +83,7 @@
 
     <!-- Card 5: 2006 -->
     <article class="milestone-card">
-      <img class="milestone-image" src="img/2006.jpg" alt="Intel's peak greenhouse gas emissions in 2006" />
+      <img class="milestone-image" src="img/2006.jpg" alt="Image representing Intel's peak greenhouse gas emissions in 2006" />
       <h2 class="milestone-year">2006</h2>
       <h3 class="milestone-title">Peak GHG Emissions</h3>
       <p class="milestone-description">
@@ -94,7 +96,7 @@
 
     <!-- Card 6: 2020 -->
     <article class="milestone-card">
-      <img class="milestone-image" src="img/2020.jpg" alt="Intel RISE strategy launched in 2020" />
+      <img class="milestone-image" src="img/2020.jpg" alt="Image representing Intel's RISE sustainability strategy, launched in 2020" />
       <h2 class="milestone-year">2020</h2>
       <h3 class="milestone-title">RISE Strategy</h3>
       <p class="milestone-description">
@@ -106,7 +108,7 @@
 
     <!-- Card 7: 2022 -->
     <article class="milestone-card">
-      <img class="milestone-image" src="img/2022.jpg" alt="Intel announces its net-zero by 2040 commitment in 2022" />
+      <img class="milestone-image" src="img/2022.jpg" alt="Image representing Intel's net-zero by 2040 commitment announced in 2022" />
       <h2 class="milestone-year">2022</h2>
       <h3 class="milestone-title">Net-Zero By 2040</h3>
       <p class="milestone-description">
@@ -118,7 +120,7 @@
 
     <!-- Card 8: 2023 -->
     <article class="milestone-card">
-      <img class="milestone-image" src="img/2023.jpg" alt="Intel reaches 99 percent renewable electricity usage in 2023" />
+      <img class="milestone-image" src="img/2023.jpg" alt="Image representing Intel's 99 percent renewable electricity milestone in 2023" />
       <h2 class="milestone-year">2023</h2>
       <h3 class="milestone-title">Renewable Electricity</h3>
       <p class="milestone-description">
@@ -130,7 +132,7 @@
 
     <!-- Card 9: 2024 -->
     <article class="milestone-card">
-      <img class="milestone-image" src="img/2024.jpg" alt="Intel Sustainability Summit held in 2024" />
+      <img class="milestone-image" src="img/2024.jpg" alt="Image representing Intel's first Sustainability Summit in 2024" />
       <h2 class="milestone-year">2024</h2>
       <h3 class="milestone-title">Sustainability Summit</h3>
       <p class="milestone-description">
@@ -145,7 +147,182 @@
   <!-- Timeline Instructions -->
   <p class="timeline-instruction">Scroll to view timeline | Hover over cards to learn more!</p>
 
+  <!-- Sustainability Section -->
+  <section class="sustainability-section" aria-labelledby="sustainability-heading">
+    <div class="container">
+      <h2 id="sustainability-heading" class="sustainability-heading">Sustainability in Action</h2>
+      <div class="row g-4">
+        <article class="col-12 col-md-4">
+          <div class="sustainability-column">
+            <h3 class="sustainability-title">
+              <i class="bi bi-globe2 sustainability-icon" aria-hidden="true"></i>
+              RISE Strategy
+            </h3>
+            <p>
+              Intel's RISE strategy focuses on creating a more responsible, inclusive,
+              sustainable, and enabling future through technology and collaboration.
+            </p>
+            <a class="btn btn-primary" href="#">Learn More</a>
+          </div>
+        </article>
+
+        <article class="col-12 col-md-4">
+          <div class="sustainability-column">
+            <h3 class="sustainability-title">
+              <i class="bi bi-leaf sustainability-icon" aria-hidden="true"></i>
+              Commitment
+            </h3>
+            <p>
+              Intel is committed to achieving net-zero greenhouse gas emissions across
+              its global operations by 2040 while continuing to improve energy efficiency.
+            </p>
+            <a class="btn btn-primary" href="#">Learn More</a>
+          </div>
+        </article>
+
+        <article class="col-12 col-md-4">
+          <div class="sustainability-column">
+            <h3 class="sustainability-title">
+              <i class="bi bi-droplet sustainability-icon" aria-hidden="true"></i>
+              Water &amp; Waste
+            </h3>
+            <p>
+              Intel works to conserve water, reduce waste, and support circular
+              manufacturing practices across its global operations.
+            </p>
+            <a class="btn btn-primary" href="#">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LevelUp: Bootstrap Accordion -->
+  <section class="accordion-section" aria-labelledby="accordion-heading">
+    <div class="container">
+      <h2 id="accordion-heading" class="accordion-section-heading">Explore Sustainability Goals</h2>
+      <p class="accordion-section-introduction">
+        Learn more about the key areas shaping Intel's approach to a more sustainable future.
+      </p>
+
+      <div class="accordion" id="sustainabilityAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingRenewableEnergy">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRenewableEnergy" aria-expanded="true" aria-controls="collapseRenewableEnergy">
+              Renewable Energy
+            </button>
+          </h3>
+          <div id="collapseRenewableEnergy" class="accordion-collapse collapse show" aria-labelledby="headingRenewableEnergy" data-bs-parent="#sustainabilityAccordion">
+            <div class="accordion-body">
+              Increasing the use of renewable electricity helps reduce the environmental impact of global operations and supports long-term emissions reduction goals.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingWaterConservation">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWaterConservation" aria-expanded="false" aria-controls="collapseWaterConservation">
+              Water Conservation
+            </button>
+          </h3>
+          <div id="collapseWaterConservation" class="accordion-collapse collapse" aria-labelledby="headingWaterConservation" data-bs-parent="#sustainabilityAccordion">
+            <div class="accordion-body">
+              Water stewardship focuses on conserving water, restoring watersheds, and improving efficiency in communities where technology is designed and manufactured.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingCircularEconomy">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCircularEconomy" aria-expanded="false" aria-controls="collapseCircularEconomy">
+              Circular Economy &amp; Waste
+            </button>
+          </h3>
+          <div id="collapseCircularEconomy" class="accordion-collapse collapse" aria-labelledby="headingCircularEconomy" data-bs-parent="#sustainabilityAccordion">
+            <div class="accordion-body">
+              Circular practices help reduce waste by encouraging reuse, recycling, responsible material management, and more efficient manufacturing processes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2 class="newsletter-heading">Stay Informed</h2>
+        <p class="newsletter-description">
+          Subscribe to Intel's sustainability newsletter for updates on innovation,
+          climate action, and responsible technology.
+        </p>
+
+        <form>
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <label class="form-label" for="first-name">First Name</label>
+              <input class="form-control" type="text" id="first-name" name="first-name" />
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label class="form-label" for="last-name">Last Name</label>
+              <input class="form-control" type="text" id="last-name" name="last-name" />
+            </div>
+
+            <div class="col-12">
+              <label class="form-label" for="email-address">Email Address</label>
+              <input class="form-control" type="email" id="email-address" name="email-address" required />
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="sustainability-updates" name="sustainability-updates" />
+                <label class="form-check-label" for="sustainability-updates">
+                  I agree to receive sustainability updates.
+                </label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer>Intel Sustainability Timeline | Web Development Project</footer>
+  <footer>
+    <div class="footer-content">
+      <p class="footer-copyright">&copy; 2026 Intel Sustainability Timeline</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // LevelUp: Auto-detect language and adjust RTL/LTR
+    const rtlLanguages = ["ar", "fa", "he", "ur"];
+
+    function updateDirection() {
+      const language = document.documentElement.lang.toLowerCase().split("-")[0];
+      document.documentElement.dir = rtlLanguages.includes(language) ? "rtl" : "ltr";
+    }
+
+    updateDirection();
+
+    const languageObserver = new MutationObserver(updateDirection);
+    languageObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["lang"]
+    });
+  </script>
 </body>
 </html>
