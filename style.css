@@ -1,0 +1,227 @@
+/* Global styles */
+:root {
+	--intel-blue: #0071c5;
+	--dark-blue: #003b71;
+	--light-blue: #e8f4fb;
+	--white: #ffffff;
+	--light-gray: #f3f6f8;
+	--border-gray: #d9e2e8;
+	--dark-text: #172b3a;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	color: var(--dark-text);
+	background-color: var(--light-gray);
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+	padding: 72px 24px;
+	text-align: center;
+	background: linear-gradient(135deg, var(--dark-blue), var(--intel-blue));
+}
+
+.hero-content {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.intel-logo {
+	width: min(180px, 60vw);
+	height: auto;
+	margin-bottom: 24px;
+}
+
+.hero-title {
+	margin: 0 0 16px;
+	color: var(--white);
+	font-size: clamp(2.25rem, 5vw, 4rem);
+	line-height: 1.1;
+}
+
+.hero-description {
+	max-width: 680px;
+	margin: 0 auto;
+	color: var(--light-blue);
+	font-size: 1.1rem;
+}
+
+/* Timeline */
+.timeline-section {
+	padding: 64px 24px;
+	background-color: var(--light-gray);
+}
+
+.timeline {
+	display: flex;
+	gap: 24px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 12px 8px 24px;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+	scroll-padding: 8px;
+}
+
+/* LevelUp: Scroll Snap */
+
+/* Cards */
+.milestone-card {
+	flex: 0 0 320px;
+	padding: 20px;
+	overflow: hidden;
+	border: 1px solid var(--border-gray);
+	border-radius: 10px;
+	background-color: var(--white);
+	box-shadow: 0 6px 18px rgba(0, 59, 113, 0.1);
+	scroll-snap-align: start;
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* LevelUp: CSS Transforms */
+.milestone-card:hover {
+	transform: translateY(-6px) scale(1.02);
+	border-color: var(--intel-blue);
+	box-shadow: 0 12px 28px rgba(0, 59, 113, 0.22);
+}
+
+.milestone-year {
+	margin: 20px 0 4px;
+	color: var(--intel-blue);
+	font-size: 2rem;
+	line-height: 1.1;
+}
+
+.milestone-title {
+	margin: 0;
+	color: var(--dark-blue);
+	font-size: 1.25rem;
+}
+
+/* Images */
+.milestone-image {
+	display: block;
+	width: 100%;
+	height: 180px;
+	border-radius: 6px;
+	background-color: var(--light-blue);
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.milestone-card:hover .milestone-image {
+	transform: scale(1.03);
+}
+
+/* Hover interaction */
+.milestone-description {
+	max-height: 0;
+	margin: 0;
+	overflow: hidden;
+	opacity: 0;
+	transform: translateY(-8px);
+	transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease, margin-top 0.4s ease;
+}
+
+.milestone-card:hover .milestone-description,
+.milestone-card:focus-within .milestone-description {
+	max-height: 240px;
+	margin-top: 16px;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Instructions */
+.timeline-instruction {
+	margin: 0;
+	padding: 0 24px 48px;
+	color: var(--dark-blue);
+	text-align: center;
+}
+
+/* Footer */
+footer {
+	padding: 28px 24px;
+	color: var(--white);
+	text-align: center;
+	background-color: var(--dark-blue);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.hero {
+		padding: 48px 20px;
+	}
+
+	.hero-title {
+		font-size: 2.25rem;
+	}
+
+	.hero-description {
+		font-size: 1rem;
+	}
+
+	.timeline-section {
+		padding: 40px 20px;
+	}
+
+	.timeline {
+		display: block;
+		padding: 0;
+		overflow-x: visible;
+		scroll-snap-type: none;
+	}
+
+	.milestone-card {
+		width: 100%;
+		margin-bottom: 24px;
+		transform: none;
+	}
+
+	.milestone-card:hover {
+		transform: none;
+	}
+
+	.milestone-card:hover .milestone-image {
+		transform: none;
+	}
+
+	.milestone-card:last-child {
+		margin-bottom: 0;
+	}
+
+	.milestone-description,
+	.milestone-card:hover .milestone-description,
+	.milestone-card:focus-within .milestone-description {
+		max-height: none;
+		margin-top: 16px;
+		opacity: 1;
+		transform: none;
+	}
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+	.timeline {
+		scroll-behavior: auto;
+	}
+
+	.milestone-card,
+	.milestone-image,
+	.milestone-description {
+		transition: none;
+	}
+
+	.milestone-card:hover,
+	.milestone-card:hover .milestone-image {
+		transform: none;
+	}
+}
